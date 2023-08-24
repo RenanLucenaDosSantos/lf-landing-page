@@ -4,13 +4,6 @@
   margin: 0;
 }
 
-html {
-  min-height: 100vh;
-  min-width: 100vh;
-
-  overflow: hidden;
-}
-
 body {
   font-family: 'Inter', sans-serif;
   color: #062226;
@@ -23,11 +16,6 @@ body {
   justify-content: start;
 
   padding-top: 2.25rem;
-
-  width: 100%;
-  min-height: 100%;
-
-  position: relative;
 }
 
 .decorator {
