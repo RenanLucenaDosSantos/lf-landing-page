@@ -4,6 +4,13 @@
   margin: 0;
 }
 
+html {
+  min-height: 100vh;
+  min-width: 100vh;
+
+  overflow: hidden;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   color: #062226;
@@ -16,6 +23,17 @@ body {
   justify-content: start;
 
   padding-top: 2.25rem;
+
+  width: 100%;
+  min-height: 100%;
+
+  position: relative;
+}
+
+.decorator {
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
 
 /* Fonts */
@@ -134,27 +152,31 @@ button {
     flex-direction: column;
 
     padding: 3.5rem 3rem;
-    gap: 6rem;
+    gap: 3rem;
   
     /* border-radius: 50px;
     box-shadow: 13px 13px 0px 4px rgba(0, 0, 0, 0.12);
     background-color: #FFF; */
   
     background-image: url("/img/bg-mobile.svg");
-    /* background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; */
+    /* background-repeat: no-repeat; */
+    background-position: bottom;
+    /* background-size: cover; */
   }
 
   .right {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     justify-content: start;
   
     padding-left: 0;
   
     min-width: 100%;
+  }
+
+  .left {
+    margin-bottom: 3.5rem;
   }
 
   h1 {
